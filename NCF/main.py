@@ -67,9 +67,9 @@ parser.add_argument('--model_num',
 	type = int, 
 	default = 5,
 	help='number of models')
-parser.add_argument('--keep', 
+parser.add_argument('--remove', 
 	type = float, 
-	default = 0.7,
+	default = 0.75,
 	help='ratio to keep')
 
 args = parser.parse_args()
@@ -306,7 +306,7 @@ for model_id in range(model_num):
     mask[sorted_users[model_id]] = 1.0
 
 
-    threshold = torch.quantile(difference_mat[sorted_users[model_id]][difference_mat[sorted_users[model_id]]!=0],args.keep)
+    threshold = torch.quantile(difference_mat[sorted_users[model_id]][difference_mat[sorted_users[model_id]]!=0],1.0-args.remove)
     difference_mat *= mask
     difference_mat[difference_mat < threshold] = 0.0
     difference_mat[difference_mat != 0] = 1.0
