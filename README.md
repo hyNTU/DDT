@@ -2,8 +2,6 @@
 
 This is the pytorch implementation of our paper: **Discriminative Denoising Training Framework**.
 
-> Haoyan Chua, Yingpeng Du, Zhu Sun, Ziyan Wang, Tianjun Wei and Jie Zhang.
-
 ## Environment
 - python 3.11.5
 - pytorch 2.0.1
