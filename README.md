@@ -1,4 +1,4 @@
-# DDT
+# DisT
 
 This is the pytorch implementation of our paper: **Discriminative Denoising Training Framework**.
 
@@ -10,7 +10,7 @@ This is the pytorch implementation of our paper: **Discriminative Denoising Trai
 
 ## Commands
 
-We provided the clustered users, spec_users_{dataset}.pth, for all datasets in the [data](https://github.com/hyNTU/DDT/tree/main/data) folder:
+We provided the clustered users, spec_users_{dataset}.pth, for all datasets in the [data](https://github.com/hyNTU/DisT/tree/main/data) folder:
 ### To obtain contrastive loss 
 Go to NCF or CDAE folder and run the codes below:
 #### 1) Overall Loss
