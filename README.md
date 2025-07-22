@@ -34,17 +34,17 @@ The two codes above will store the losses which will be used for denoising asymm
 ### To run GMF
 Go to NCF folder and simply run the code below with default settings to return results shown in the paper:
 ```
-python main.py --dataset movielens --model GMF --gpu 0 --remove 1.0 --epoch_eval 20
+python main.py --dataset movielens --model GMF --gpu 0 --remove 0.5 --epoch_eval 20
 
 ```
 or for NeuMF
 ```
-python main.py --dataset yelp --model NeuMF-end --gpu 0 --remove 0.75 --epoch_eval 20
+python main.py --dataset yelp --model NeuMF-end --gpu 0 --remove 0.5 --epoch_eval 20
 ```
 ### To run CDAE
 Go to CDAE folder and run the code below:
 ```
-python main_CDAE.py --dataset movielens --gpu 0 --remove 1.0 --epoch_eval 20
+python main_CDAE.py --dataset movielens --gpu 0 --remove 0.5 --epoch_eval 20
 
 ```
 
