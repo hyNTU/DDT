@@ -1,6 +1,6 @@
 # DisT
 
-This is the pytorch implementation of our paper: **Discriminative Denoising Training Framework**.
+This is the pytorch implementation of our paper: **Discriminative Training Framework**.
 
 ## Environment
 - python 3.11.5
